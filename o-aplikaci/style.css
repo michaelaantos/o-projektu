@@ -1,14 +1,70 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFAFDB;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .container {
   max-width: 20rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.welcome-title {
+  border: #FFD28D;
+}
+
+h1 {
+  color: #FF6B31;
+
+}
+
+#visit {
+  background-color: #FFD28D;
+  border: #FFD28D;
+  color: #FF6B31
+}
+
+.navbar_container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #FFD28D;
+}
+
+.navbar_container li {
+  display: inline-block;
+}
+
+.navbar_container a {
+  display: inline-block;
+  color: #FF6B31;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+a:hover {
+  background-color: #DFAFDB
 }
