@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 
+.mainpage {
+  height: 100vh;
+}
+
 header {
 background-color: #FFD28D;
 width: 100%;
@@ -42,6 +46,20 @@ width: 100%;
 .row {
 display: flex;
 max-width: 100%;
+height: 100%;
+}
+
+
+.row .col-md-6 {
+  width: 50vw;
+}
+
+
+.row .hero-banner {
+  background-image: url("images/mainpage-hero-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-welcome {
@@ -52,7 +70,9 @@ max-width: 100%;
 }
 
 .img-hero {
-  max-width: 50vw;
+width: 50vw;
+object-fit: cover;
+display: none;
 }
 
 
@@ -105,4 +125,22 @@ a:hover {
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+  .row  {
+    flex-direction: column;
+  }  
+  .row .hero-banner {
+    height: 100%;
+  }
+  .row .col-md-6 {
+    width: 100vw;
+    }
+  ul {
+    padding: 0;
+  }
+  .hero-welcome {
+    margin-bottom: 20px;
+  }
 }
