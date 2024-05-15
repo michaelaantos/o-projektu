@@ -31,8 +31,8 @@ body {
 }
 
 header {
-background-color: #FFD28D;
-width: 100%;
+  background-color: #FFD28D;
+  width: 100%;
 }
 
 .hero-container {
@@ -44,9 +44,9 @@ width: 100%;
 }
 
 .row {
-display: flex;
-justify-content: space-between;
-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
 
 
@@ -71,9 +71,9 @@ height: 100%;
 }
 
 .img-hero {
-width: 50vw;
-object-fit: cover;
-display: none;
+  width: 50vw;
+  object-fit: cover;
+  display: none;
 }
 
 
@@ -107,7 +107,7 @@ h1 {
 }
 
 .active {
-background-color: #fde9cb;
+  background-color: #fde9cb;
 }
 
 .navbar_container a {
@@ -135,7 +135,7 @@ a:hover {
 /* O-nas */
 
 .container-developers {
-width: 50vw;
+  width: 50vw;
 
 }
 
@@ -147,12 +147,12 @@ width: 50vw;
 }
 
 .developer {
-  width:50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .developer-photo {
@@ -163,13 +163,13 @@ width: 50vw;
 }
 
 .developer h2 {
-  color:aliceblue;
+  color: aliceblue;
   font-style: italic;
   font-size: 21px;
 }
 
 .developer h3 {
-  color:#FF6B31;
+  color: #FF6B31;
   font-size: 21px;
 }
 
@@ -177,6 +177,7 @@ width: 50vw;
 .social-links {
   margin: 40px 0;
 }
+
 .social-links a {
   text-decoration: none;
   margin: 0 20px;
@@ -196,18 +197,22 @@ width: 50vw;
 
 
 @media (max-width:768px) {
-  .row  {
+  .row {
     flex-direction: column;
-  }  
+  }
+
   .row .hero-banner {
     height: 100%;
   }
+
   .row .col-md-6 {
     width: 100vw;
-    }
+  }
+
   ul {
     padding: 0;
   }
+
   .hero-welcome {
     margin-bottom: 20px;
   }
@@ -219,6 +224,7 @@ width: 50vw;
   .developer-photo {
     max-width: 344px;
   }
+
   .frontend-developers {
     justify-content: center;
     flex-wrap: wrap;
@@ -229,4 +235,51 @@ width: 50vw;
     width: 100%;
     margin: 10px;
   }
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 50px;
+}
+
+.project-description {
+  line-height: 1.5;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.2em;
+  border: 1px solid #FF6B31;
+  padding: 10px;
+}
+
+/* CSS pre cil-projektu.html */
+
+
+
+.container-project-goals {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 50px;
+  padding-top: 80px;
+}
+
+.check-photo {
+  width: 40px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project__goal--checklist {
+  color: whitesmoke;
+  font-size: 20px;
 }
