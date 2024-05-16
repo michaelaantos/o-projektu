@@ -196,46 +196,7 @@ a:hover {
 
 
 
-@media (max-width:768px) {
-  .row {
-    flex-direction: column;
-  }
 
-  .row .hero-banner {
-    height: 100%;
-  }
-
-  .row .col-md-6 {
-    width: 100vw;
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  .hero-welcome {
-    margin-bottom: 20px;
-  }
-
-  .row .developer {
-    max-width: 344px;
-  }
-
-  .developer-photo {
-    max-width: 344px;
-  }
-
-  .frontend-developers {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .container-developers {
-    max-width: 344px;
-    width: 100%;
-    margin: 10px;
-  }
-}
 
 .project-container {
   display: flex;
@@ -282,4 +243,53 @@ a:hover {
 .project__goal--checklist {
   color: whitesmoke;
   font-size: 20px;
+  width: 100%;
+}
+
+/*media */
+
+@media (max-width:768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row .hero-banner {
+    height: 100%;
+  }
+
+  .row .col-md-6 {
+    width: 100vw;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .hero-welcome {
+    margin-bottom: 20px;
+  }
+
+  .row .developer {
+    max-width: 344px;
+  }
+
+  .developer-photo {
+    max-width: 344px;
+  }
+
+  .frontend-developers {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container-developers {
+    max-width: 344px;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .container-project-goals {
+    margin: 20px;
+  }
+
 }
